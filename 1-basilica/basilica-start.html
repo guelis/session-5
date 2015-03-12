@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/modernizr.js"></script>
 	<style type="text/css">
+		@import url(futura/stylesheet.css) screen;
+
 		* { padding:0; margin:0;}
 		.wrapper { 
 			width:770px; 
@@ -29,14 +31,115 @@
 			border-radius: 8px 8px 0 0;
 		}
 		.branding h1 {
+			font-family: 'FuturaStdLight'; 
+			font-size: 400%;
+			color:#fff;
 			position: absolute;
-			background: url(img/h1.png) no-repeat;
-			width: 787px;
-			height: 169px;
-			top:-60px;
-			left:-30px;
-			text-indent:-99999px;
+			top:40px;
+			left:80px;
+			
 		}
+	
+    .nav_tools {
+    	display: none;
+}
+	.nav_main {
+		background:  #e4e1d1; 
+	}
+
+	.nav_main p {
+ background:#edc025;
+ padding:4px;
+ font-size : 160%;
+ color : #88a308; 
+}
+
+.nav_features {
+
+	padding:5px;
+	list-style: none;
+}
+
+.nav_features li{
+	float: left;
+	margin-right: 12px;
+}
+
+
+.nav_features a {
+
+text-decoration: none;
+display: block;
+background: url(img/btns.png) no-repeat ;
+text-align: center;
+width:140px;
+height: 50px;
+font-size: 190%;
+color:#fff;
+line-height: 50px;
+
+}
+
+
+.nav_pickit a{
+
+}
+
+
+.nav_cookit a{
+	background-position: -150px 0;
+}
+
+.nav_cookit a:hover{
+	background-position: -150px -52px;
+}
+
+
+ .cssgradients  .nav_storeit a {
+
+	 background: linear-gradient(to top, #dfa910 0%,#fcde41 100%);
+	  border-radius: 6px;
+}
+
+
+.cssgradients .nav_storeit a:hover {
+ background: linear-gradient(to top, #fcde41 1%,#dfa910
+100%);
+}
+
+
+
+  .no-cssgradients  .nav_storeit a {
+
+  	background: 
+  }
+
+
+  .branding h2{
+
+  	background: url(img/beta.png) no-repeat;
+  	width: 85px;
+  	height: 85px;
+     position: absolute;
+     top:-20px;
+     right: -20px;
+     color: #fff;
+     text-align: center;
+     line-height: 85px;
+     text-transform: uppercase;
+     transform: rotate(14deg );
+     transaiton: all  0.2 linear;
+  }
+
+
+  .branding h2:hover {
+
+  	cursor: pointer;
+  	transform: rotate(0deg );
+  	transform: scale (1.2);
+  }
+
+
 	</style>
 </head>
 
@@ -47,6 +150,7 @@
 		<!-- 1. Branding -->
 		<div class="branding">
 			<h1>Basilica!</h1>
+			<h2>Beta</h2>
 		</div>
 
 		<!-- 2. Navigation -->
@@ -60,7 +164,7 @@
 				<li class="nav_rss"><a href="#">Nutritious RSS</a></li>
 			</ul>
 
-			<ul class="nav_features">
+			<ul class="nav_features clearfix">
 				<li class="nav_pickit"><a href="#">pick it</a></li>
 				<li class="nav_cookit"><a href="#">cook it</a></li>
 				<li class="nav_storeit"><a href="#">store it</a></li>
